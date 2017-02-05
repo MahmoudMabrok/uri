@@ -11,11 +11,14 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Distance {
+public class Consumation {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+         Scanner scanner = new Scanner(System.in);
+        double a = scanner.nextDouble();
+        double b = scanner.nextDouble();
+        
+        System.out.printf("%.3f km/l\n" , a / b );
+        
     }
     
 }

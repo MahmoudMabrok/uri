@@ -11,11 +11,19 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Distance {
+public class PosNum {
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+        int c =0;
+        double a ; 
+        for (int i = 0; i < 6; i++) {
+         a = scanner.nextDouble();
+         if (a > 0 )
+          c++;   
+        }
+        System.out.println(c+" valores positivos");
+        
     }
     
 }

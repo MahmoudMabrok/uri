@@ -11,11 +11,16 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Distance {
+public class DisTwoPo {
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+        double a = scanner.nextDouble();
+        double b = scanner.nextDouble();
+        double c  = scanner.nextDouble();
+        double d  = scanner.nextDouble();
+        double r = Math.sqrt(Math.pow(a-c, 2)+( Math.pow(b-d, 2)));
+        System.out.printf("%.4f\n" , r);
     }
     
 }

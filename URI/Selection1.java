@@ -11,21 +11,20 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Greatest {
+public class Selection1 {
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        int y = scanner.nextInt();
-        int z = scanner.nextInt();
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int c = scanner.nextInt();
+        int d = scanner.nextInt();
+      
         
-        if ( x >= y && x >= z )
-            System.out.println(x+" eh o maior");
-        else if (y >= z )
-            System.out.println(y+" eh o maior");
-        else 
-            System.out.println(z+" eh o maior");
-    
+        if (b>c  && d>a   &&(c+d)>(a +b )  && a%2==0  && c>0 &&d>0  )
+            System.out.println("Valores aceitos");
+        else
+            System.out.println("Valores nao aceitos");
     }
     
 }

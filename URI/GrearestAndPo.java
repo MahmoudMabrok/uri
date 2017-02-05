@@ -11,16 +11,21 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Multiples {
+public class GrearestAndPo {
     public static void main(String[] args) {
         
           Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        int y = scanner.nextInt();
-        if (x % y == 0 || y%x == 0)
-            System.out.println("Sao Multiplos");
-        else
-            System.out.println("Nao sao Multiplos");
+        int a , index =0 ,max= Integer.MIN_VALUE;
+        for (int i = 0; i < 100; i++) {
+            a = scanner.nextInt();
+            if ( a > max )
+            {
+            max =a;
+            index = i+1;
+            }
+        }
+        System.out.println(max);
+        System.out.println(index);
     }
     
 }

@@ -11,11 +11,18 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Distance {
+public class EvenBet {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+          Scanner scanner = new Scanner(System.in);
+         int c =0;
+        double a ;
+        for (int i = 0; i < 5; i++) {
+          a = scanner.nextDouble(); 
+         if (a %2 == 0 )
+          c++;   
+        }
+        System.out.println(c+" valores pares");
+        
     }
     
 }

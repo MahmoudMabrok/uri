@@ -11,11 +11,24 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Distance {
+public class ArrayRep {
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+        int[] A = new int[10];
+        for (int i = 0; i < 10; i++) {
+            A[i] = scanner.nextInt();
+            if (A[i] < 1) {
+                A[i] = 1;
+            }
+
+        }
+        for (int i = 0; i < 10; i++) {
+
+            System.out.println("X[" + i + "] = " + A[i]);
+        }
+        
     }
-    
+
 }

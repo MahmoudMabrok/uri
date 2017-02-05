@@ -11,11 +11,20 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Distance {
+public class Positive {
     public static void main(String[] args) {
+        
+         
         Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
-    }
+        int[] x = new int[6];
+         int n_p = 0;   
+        for (int y =0 ; y < x.length ; y++) {
+            x[y] = scanner.nextInt();
+            if (x[y] >0)
+                n_p ++ ;
+        }
+        System.out.println(n_p +" valores positivos");
+        
+     }
     
 }

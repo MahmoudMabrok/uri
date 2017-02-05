@@ -11,11 +11,17 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Distance {
+public class SumCONOdd {
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int s = 0;
+        for (int i = a -1 ; i > b; i--) {
+            if ( i %2 != 0)
+                s+=i;
+        }
+        System.out.println(s);
     }
-    
 }

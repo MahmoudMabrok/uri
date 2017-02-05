@@ -5,17 +5,17 @@
  */
 package URI;
 
-import java.util.Scanner;
-
 /**
  *
  * @author mo3tamed
  */
-public class Distance {
+public class SSequence {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+        double sum = 0;
+        for (int i = 1; i < 101; i++) {
+            sum += (1.0 / i); 
+        }
+        System.out.printf("%.2f\n" , sum);
     }
     
 }

@@ -11,11 +11,23 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Distance {
+public class SummingConsecutive {
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+        int a = scanner.nextInt();
+        int n ; 
+        do {            
+                    n = scanner.nextInt();
+
+        } while (n < 1  );
+        int sum = a;
+        for (int i = 1; i < n; i++) {
+            a+=1;
+            sum+= a;
+        }
+        System.out.println(sum);
+        
     }
     
 }

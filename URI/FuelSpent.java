@@ -11,11 +11,15 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Distance {
+public class FuelSpent {
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+        double a = scanner.nextDouble();
+        double b = scanner.nextDouble();
+        
+        System.out.printf("%.3f\n" , (a * b)/ 12.0 );
+        
+        
     }
-    
 }

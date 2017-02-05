@@ -11,11 +11,12 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Distance {
+public class Sphere {
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+        double a = scanner.nextDouble();
+        System.out.printf("VOLUME = %.3f\n", (4/3.0*3.14159*a*a*a ));
     }
     
 }

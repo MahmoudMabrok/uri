@@ -11,11 +11,14 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Distance {
+public class DivisorsI {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+         Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        for (int i = 1; i <= a; i++) {
+            if (a % i == 0)
+            System.out.println(i);
+        }
     }
     
 }

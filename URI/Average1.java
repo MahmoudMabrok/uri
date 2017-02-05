@@ -22,6 +22,7 @@ public class Average1 {
     double  y = scanner.nextDouble();
     y = y*7.5;
     double a = (x+ y) / 11.0;
+        System.out.println("a = " + a);
     BigDecimal bd = new BigDecimal(a).setScale(5, RoundingMode.HALF_EVEN);
         System.out.println("MEDIA = " + bd);
     

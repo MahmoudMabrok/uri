@@ -11,11 +11,14 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Distance {
+public class Odd {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+        for (int i = 1; i <= x; i++) {
+            if ( i %2 != 0)
+            System.out.println(i);            
+        }
     }
     
 }

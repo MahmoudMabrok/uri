@@ -5,17 +5,23 @@
  */
 package URI;
 
-import java.util.Scanner;
-
 /**
  *
  * @author mo3tamed
  */
-public class Distance {
+public class Sequence1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+        
+        int i = 1 ;
+        for (int j = 7; j > 4; j--) {
+            System.out.println("I="+i+" J="+j);
+            if (j == 5 && i != 9)
+            {
+            i+=2;
+            j=8;
+            
+            }
+        }
     }
     
 }

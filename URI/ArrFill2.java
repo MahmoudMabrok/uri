@@ -11,11 +11,29 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Distance {
+public class ArrFill2 {
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+        int[] A = new int[1000];
+        int v = -1;
+        for (int i = 0; i < 1000; i++) {
+
+            if (v < x -1 ) {
+
+                v++;
+            } else {
+                v = 0;
+
+            }
+            A[i] = v;
+
+        }
+        for (int i = 0; i < 1000; i++) {
+            System.out.println("N[" + i + "] = " + A[i]);
+
+        }
     }
-    
 }

@@ -11,11 +11,14 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class Distance {
+public class SaralyPlus {
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        System.out.print(x*2 + " minutos\n");
+        String s = scanner.nextLine();
+        double a = scanner.nextDouble();
+        double b = scanner.nextDouble();
+        System.out.printf("TOTAL = R$ %.2f\n" , (0.15 * b) + a);
     }
     
 }
