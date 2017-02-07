@@ -17,7 +17,7 @@ public class DDD {
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
         if (x == 11) {
-            System.out.print("Sao Paulo");
+            System.out.println("Sao Paulo");
         } else if (x == 31) {
             System.out.println("Belo Horizonte");
         } else if (x == 71) {

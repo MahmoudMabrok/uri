@@ -45,7 +45,7 @@ public class Help {
         double a = scanner.nextDouble();
         double b = scanner.nextDouble();
         double c  = scanner.nextDouble();
-        BigDecimal bd = new BigDecimal(z).setScale(1, RoundingMode.HALF_EVEN);
+        BigDecimal bd = new BigDecimal(z).setScale(1, RoundingMode.UNNECESSARY);
         System.out.println("bd = " + bd);
          System.out.println("N["+i+"] = "+B[i]);
     

@@ -24,20 +24,18 @@ public class EvenOdd {
         }
         for (int i = 0; i < a; i++) {
 
-            if (b[i] % 2 == 0 ) {
-                System.out.println("");
+            if (b[i] % 2 == 0 && b[i] > 0) {
+                System.out.println("EVEN POSITIVE");
+            } else if (b[i] % 2 == 0 && b[i] < 0) {
+                System.out.println("EVEN NEGATIVE");
+            } else if (b[i] < 0 && b[i] % 2 != 0) {
+                System.out.println("ODD NEGATIVE");
+            } else if (b[i] > 0 && b[i] % 2 != 0) {
+                System.out.println("ODD POSITIVE");
             } else {
-                System.out.println("");
-            }
-            if (b[i] > 0) {
-                System.out.println("");
-            }
-            if (b[i] < 0) {
-                System.out.println("");
+                System.out.println("NULL");
             }
         }
-
     }
 
-
-
+}
