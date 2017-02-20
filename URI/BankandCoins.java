@@ -5,6 +5,8 @@
  */
 package URI;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 /**
@@ -21,8 +23,10 @@ public class BankandCoins {
         System.out.println("NOTAS:");
         for (int i = 0; i < d.length; i++) {
             double r = d[i] ;
-               // System.out.println((int)(a/d[i]) +" nota(s) de R$ "+r);
-                System.out.printf("%d nota(s) de R$ %.2f\n" , (int)(a/d[i])   ,d[i]  );
+              
+            BigDecimal bd = new BigDecimal(a).setScale(2, RoundingMode.HALF_DOWN);
+            a= bd.doubleValue();
+            System.out.printf("%d nota(s) de R$ %.2f\n" , (int)(a/d[i])   ,d[i]  );
                 a=a%d[i];
                 if (i == 5 )
                     System.out.println("MOEDAS:");

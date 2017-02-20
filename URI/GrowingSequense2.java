@@ -11,30 +11,28 @@ import java.util.Scanner;
  *
  * @author mo3tamed
  */
-public class GrowingSequence {
+public class GrowingSequense2 {
     public static void main(String[] args) {
-         Scanner scanner = new Scanner(System.in);
-        int[] A = new int[Integer.MAX_VALUE / 2000];
         
-        int c =0 , a  ;
+        
+         Scanner scanner = new Scanner(System.in);
+     
+        
+        int  a  ;
         a = scanner.nextInt();
         while ( a > 0 )
         {
-         A[c] = a ;
-         c++;         
+            for (int i = 1; i <= a; i++) {
+                System.out.print(i);
+                if ( i != a)
+                    System.out.print(" ");
+            }
+            System.out.println("");
+                
          a = scanner.nextInt();
         
         }
-        for (int i = 0; i < c; i++) {
-            for (int j = 1; j <= A[i]; j++) {
-                System.out.print(j);
-               
-                    System.out.print(" ");
-            }
-           
-            System.out.println("");
     }
     }
     
-    
-}
+

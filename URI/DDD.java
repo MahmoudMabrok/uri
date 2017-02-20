@@ -16,7 +16,7 @@ public class DDD {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int x = scanner.nextInt();
-        if (x == 11) {
+       if (x == 11) {
             System.out.println("Sao Paulo");
         } else if (x == 31) {
             System.out.println("Belo Horizonte");
@@ -33,7 +33,7 @@ public class DDD {
         } else if (x == 27) {
             System.out.println("Vitoria");
         } else {
-            System.out.println("DDD não cadastrado");
+            System.out.println("DDD nao cadastrado");
         }
 
     }

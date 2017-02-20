@@ -18,41 +18,44 @@ public class Month {
         int a = scanner.nextInt();
         switch (a) {
             case 1:
-                System.out.println("January");
+                System.out.print("January");
                 break;
             case 2:
-                System.out.println("February");
+                System.out.print("February");
                 break;
             case 3:
-                System.out.println("March");
+                System.out.print("March");
                 break;
             case 4:
-                System.out.println("April");
+                System.out.print("April");
                 break;
             case 5:
-                System.out.println("May");
+                System.out.print("May");
                 break;
             case 6:
-                System.out.println("June");
+                System.out.print("June");
                 break;
             case 7:
-                System.out.println("July");
+                System.out.print("July");
                 break;
             case 8:
-                System.out.println("Augest");
+                System.out.print("Augest");
                 break;
             case 9:
-                System.out.println("September");
+                System.out.print("September");
                 break;
             case 10:
-                System.out.println("October");
+                System.out.print("October");
                 break;
             case 11:
-                System.out.println("November");
+                System.out.print("November");
                 break;
             case 12:
-                System.out.println("December");
+                System.out.print("December");
                 break;
+            default : 
+                System.out.println("");
+                
 
         }
     }

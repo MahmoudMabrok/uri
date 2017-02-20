@@ -48,6 +48,13 @@ public class Help {
         BigDecimal bd = new BigDecimal(z).setScale(1, RoundingMode.UNNECESSARY);
         System.out.println("bd = " + bd);
          System.out.println("N["+i+"] = "+B[i]);
+         
+         
+         Scanner scanner = new Scanner(System.in);
+         String s1 = scanner.nextLine() ;
+         String s2 = scanner.nextLine() ;
+         String s3 = scanner.nextLine() ;
+         String s4 = scanner.nextLine() ;
     
     }
 
